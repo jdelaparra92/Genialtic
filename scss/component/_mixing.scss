@@ -1,0 +1,18 @@
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+ 
+  }
+
+  .flex{
+    @include flex;
+    @media screen and ( max-width:1050px) {
+        flex-direction: column;
+} 
+  }
+
+  .flex > div{
+    width: 100%;
+  }

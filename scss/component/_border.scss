@@ -1,0 +1,47 @@
+@keyframes slide {
+    0% {
+        transform: translateY(0);
+    }
+    15%, 30% {
+        transform: translateY(-100%);
+    }
+    45%, 60% {
+        transform: translateY(-200%);
+    }
+    75%, 90% {
+        transform: translateY(-300%);
+    }
+    100% {
+        transform: translateY(-400%);
+    }
+}
+
+.animacion-text{
+    overflow: hidden;
+    ul {
+        width: 100%;
+        height: 330px;
+        position: relative;
+        animation: slide 5s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+    }
+    
+    li {
+        position: absolute;
+
+        top: 200%;
+
+    } 
+    
+    li:first-child {
+        top: 100%;
+    }
+    
+    li:last-child {
+        top: 300%;
+    }
+}
+
+
+
+
+

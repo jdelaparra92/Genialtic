@@ -1,0 +1,35 @@
+.header{
+    background-color: #261E39;
+    padding: 20px 15%;
+}
+.header-news{
+    background: rgb(128,69,236);
+    background: linear-gradient(180deg, rgba(128,69,236,0.7) 0%, rgba(238,36,120,0.7) 100%);
+    text-align: center;
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.logo{
+    width: 220px;
+}
+.nav-link{
+    color: white;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.nav-link:hover{
+    color: #EE2478;;
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler{
+    border: 1px solid white;
+}

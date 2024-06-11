@@ -1,0 +1,138 @@
+/* Tipografias */
+.span-R{
+    color: $primario;
+    font-weight: 800;
+}
+
+.span-W{
+    color: white;
+    font-weight: 800;
+}
+.principal-grande{
+
+    font-size: 8rem;
+    color: white;
+    font-weight: 800;
+    @media screen and ( max-width:1700px) {
+        font-size: 6rem;
+    }
+}
+
+
+.elevar{
+
+    font-size: 5rem;
+    color: #320071;
+    font-weight: 800;
+    @media screen and ( max-width:800px) {
+        font-size: 2.6rem;
+        color: white;
+    }
+}
+.principal-grande-dos{
+
+    font-size: 6rem;
+    color: white;
+    font-weight: 800;
+    @media screen and ( max-width:1700px) {
+        font-size: 5rem;
+    }
+    @media screen and ( max-width:1000px) {
+        font-size: 3.5rem;
+    }
+    @media screen and ( max-width:600px) {
+        font-size: 2.5rem;
+    }
+}
+
+.principal-grande-dos-light{
+
+    font-size: 6rem;
+    color: white;
+    font-weight: 400;
+    @media screen and ( max-width:1700px) {
+        font-size: 5rem;
+    }
+    @media screen and ( max-width:1000px) {
+        font-size: 3.5rem;
+    }
+    @media screen and ( max-width:600px) {
+        font-size: 2.5rem;
+    }
+}
+
+.tituloPrincipalB{
+
+    font-size: 3.5rem;
+    color: white;
+    font-weight: 800;
+    @media screen and ( max-width:1500px) {
+        font-size: 3rem;
+    }
+}
+.tituloPrincipalR{
+
+    font-size: 3.5rem;
+    color: $primario;
+    font-weight: 800;
+    @media screen and ( max-width:1500px) {
+        font-size: 3rem;
+    }
+}
+
+.subTituloPrincipalR{
+    font-size: 3rem;
+    color: $primario;
+    font-weight: 800;
+    @media screen and ( max-width:1500px) {
+        font-size: 2rem;
+    }
+
+}
+.subTituloPrincipalW{
+    font-size: 3rem;
+    color: white;
+    font-weight: 800;
+    @media screen and ( max-width:1500px) {
+        font-size: 2rem;
+    }
+    @media screen and ( max-width:600px) {
+        font-size: 1.5rem;
+    }
+
+}
+
+.subTituloPrincipalLightB{
+    font-size: 2rem;
+    color: white;
+    font-weight: 400;
+    @media screen and ( max-width:1500px) {
+        font-size: 1.6rem;
+    }
+
+}
+
+.subTituloPrincipalLightR{
+    font-size: 2rem;
+    color: $primario;
+    font-weight: 400;
+    @media screen and ( max-width:1500px) {
+        font-size: 1.6rem;
+    }
+}
+
+.parrafo-B{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 200;
+}
+
+.parrafo-grande{
+    font-size: 1.5rem;
+    color: $primario;
+    font-weight: 600;
+}
+
+
+
+/* Tipografias */
