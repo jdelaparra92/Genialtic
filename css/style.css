@@ -14,6 +14,39 @@
   width: 100%;
 }
 
+.flex-r {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+@media screen and (max-width: 1050px) {
+  .flex-r {
+    flex-direction: column-reverse;
+  }
+}
+
+.flex-r > div {
+  width: 100%;
+}
+
+.flex-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-direction: column;
+}
+@media screen and (max-width: 1050px) {
+  .flex-c {
+    flex-direction: column;
+  }
+}
+
+.flex-c > div {
+  width: 100%;
+}
+
 /* Tipografias */
 .span-R {
   color: #EE2478;
@@ -23,6 +56,10 @@
 .span-W {
   color: white;
   font-weight: 800;
+}
+
+.tipo-centrada {
+  text-align: center;
 }
 
 .principal-grande {
@@ -180,6 +217,10 @@
   padding: 0;
 }
 
+body {
+  background-color: #261E39;
+}
+
 p, ul, li, ol, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -248,6 +289,10 @@ ul, li {
   margin-bottom: 50px;
 }
 
+.margin-B-30 {
+  margin-bottom: 30px;
+}
+
 .margin-T-100 {
   margin-top: 70px;
 }
@@ -277,7 +322,7 @@ ul, li {
   width: 100%;
   height: 330px;
   position: relative;
-  animation: slide 5s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+  animation: slide 14s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
 }
 .animacion-text li {
   position: absolute;
@@ -604,5 +649,98 @@ footer {
 }
 
 /* Fin seccion 4 index*/
+.main-nivelacion {
+  background: rgb(38, 30, 57);
+  background: linear-gradient(6deg, rgb(38, 30, 57) 51%, rgb(128, 69, 236) 100%);
+  padding: 125px 15%;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 550px) {
+  .main-nivelacion {
+    padding: 65px 15px;
+  }
+}
+
+.main-nivelacion > div {
+  width: 50%;
+}
+@media screen and (max-width: 1000px) {
+  .main-nivelacion > div {
+    width: 100%;
+  }
+}
+
+.img-nivelacion {
+  width: 100%;
+  filter: drop-shadow(14px 14px 19px #000000);
+}
+
+.img-nivelacion-100 {
+  width: 100%;
+}
+
+.niv-cont-uno {
+  background: rgb(38, 30, 57);
+  background: linear-gradient(0deg, rgb(38, 30, 57) 0%, rgb(238, 36, 120) 15%, rgb(38, 30, 57) 100%);
+  padding: 125px 15%;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 550px) {
+  .niv-cont-uno {
+    padding: 65px 15px;
+  }
+}
+
+.fondo-borde-flex-dos {
+  width: 100%;
+  height: 500px;
+  padding: 60px;
+  border-radius: 15px;
+  border: 1px solid rgb(128, 69, 236);
+  background-color: #261E39;
+}
+@media screen and (max-width: 1300px) {
+  .fondo-borde-flex-dos {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 630px) {
+  .fondo-borde-flex-dos {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+.niv-cont-dos {
+  background: rgb(38, 30, 57);
+  background: linear-gradient(0deg, rgb(38, 30, 57) 0%, rgb(128, 69, 236) 13%, rgb(38, 30, 57) 27%, rgb(128, 69, 236) 45%, rgb(38, 30, 57) 62%, rgb(128, 69, 236) 79%, rgb(38, 30, 57) 100%);
+  padding: 125px 15%;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 550px) {
+  .niv-cont-dos {
+    padding: 65px 15px;
+  }
+}
+
+.main-boot {
+  background: rgb(38, 30, 57);
+  background: linear-gradient(6deg, rgb(38, 30, 57) 51%, rgb(128, 69, 236) 100%);
+  padding: 125px 15%;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 550px) {
+  .main-boot {
+    padding: 65px 15px;
+  }
+}
+
+.fondo-flecha {
+  background-image: url("../img/flechas-debajo.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 30px;
+}
 
 /*# sourceMappingURL=style.css.map */

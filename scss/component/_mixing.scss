@@ -6,6 +6,15 @@
  
   }
 
+  @mixin padding {
+    padding: 125px 15%;
+    overflow-x: hidden;
+        @media screen and ( max-width:550px) {
+        padding: 65px 15px;
+  } }
+
+
+
   .flex{
     @include flex;
     @media screen and ( max-width:1050px) {
@@ -14,5 +23,28 @@
   }
 
   .flex > div{
+    width: 100%;
+  }
+
+  .flex-r{
+    @include flex;
+    @media screen and ( max-width:1050px) {
+        flex-direction: column-reverse;
+} 
+  }
+
+  .flex-r > div{
+    width: 100%;
+  }
+
+  .flex-c{
+    @include flex;
+    flex-direction: column;
+    @media screen and ( max-width:1050px) {
+        flex-direction: column;
+} 
+  }
+
+  .flex-c > div{
     width: 100%;
   }

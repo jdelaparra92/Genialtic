@@ -1,0 +1,14 @@
+// main //
+.main-boot{
+    background: rgb(38,30,57);
+    background: linear-gradient(6deg, rgba(38,30,57,1) 51%, rgba(128,69,236,1) 100%);
+    @include padding;
+}
+.fondo-flecha{
+    background-image: url("../img/flechas-debajo.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 30px;
+}
+// fin main //
