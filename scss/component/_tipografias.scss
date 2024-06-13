@@ -133,10 +133,20 @@
     font-weight: 200;
 }
 
+.parrafo-B-light{
+    font-size: 1rem;
+    color: white;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
 .parrafo-grande{
     font-size: 1.5rem;
     color: $primario;
     font-weight: 600;
+    @media screen and ( max-width:1500px) {
+        font-size: 1.3rem;
+    }
 }
 
 

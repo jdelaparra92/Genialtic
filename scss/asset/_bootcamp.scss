@@ -11,4 +11,179 @@
     background-size: contain;
     padding: 30px;
 }
+
+.grid-boot{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "p1 p2 p3"
+    "hr hr hr"
+    "p4 p5 p6";
+
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+
+    @media screen and ( max-width:1000px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "p1"
+        "p2"
+        "p3"
+        "hr"
+        "p4"
+        "p5"
+        "p6";
+    }
+}
+
+.p1{
+    grid-area: p1;
+}
+
+.p2{
+    grid-area: p2;
+}
+
+.p3{
+    grid-area: p3;
+}
+
+.p4{
+    grid-area: p4;
+}
+
+.p5{
+    grid-area: p5;
+}
+
+.p6{
+    grid-area: p6;
+}
+
+.hr{
+    grid-area: hr;
+}
 // fin main //
+
+// seccion 1 //
+.iconos{
+    width: 150px;
+}
+.section-bootcamp-uno{
+    background: rgb(38,30,57);
+    background: linear-gradient(0deg, rgba(38,30,57,1) 0%, rgba(238,36,120,1) 32%, rgba(38,30,57,1) 100%);
+    padding: 125px 15%;
+    overflow-x: hidden;
+        @media screen and ( max-width:550px) {
+        padding: 65px 15px;
+} 
+
+}
+
+.section-bootcamp-uno div > div{
+    width: 50%;
+
+    @media screen and ( max-width:1000px) {
+        width: 100%;
+    }
+}
+
+.img-boot-uno{
+    width: 100%;
+    filter: drop-shadow(14px 14px 19px #000000);
+}
+
+.img-boot-uno-80{
+    width: 80%;
+    filter: drop-shadow(14px 14px 19px #000000);
+}
+
+.fondo-borde-flex-tres{
+    width: 100%;
+    height: 430px;
+    padding: 60px;
+    border-radius: 15px;
+    border: 1px solid $secundario;
+    background-color: $fondo;
+    @media screen and ( max-width:1300px) {
+        width: 100%;
+        height: 500px;
+    } 
+    @media screen and ( max-width:1100px) {
+        height: 550px;
+    } 
+    @media screen and ( max-width:1100px) {
+        height: auto;
+    } 
+    @media screen and ( max-width:630px) {
+        width: 100%;
+        padding: 15px;
+
+    } 
+}
+
+// fin seccion 1 //
+
+// seccion 2 //
+.section-bootcamp-dos{
+    background: rgb(38,30,57);
+    background: linear-gradient(0deg, rgba(38,30,57,1) 0%, rgba(128,69,236,1) 91%, rgba(38,30,57,1) 100%);
+    padding: 125px 15%;
+    overflow-x: hidden;
+        @media screen and ( max-width:550px) {
+        padding: 65px 15px;
+} 
+
+}
+// fin seccion 2 //
+
+
+// seccion 3 //
+
+
+
+.section-bootcamp-tres{
+    background: rgb(38,30,57);
+    background: linear-gradient(11deg, rgba(38,30,57,1) 20%, rgba(128,69,236,1) 44%, rgba(38,30,57,1) 72%);
+    padding: 125px 15%;
+    overflow-x: hidden;
+        @media screen and ( max-width:550px) {
+        padding: 65px 15px;
+} 
+
+}
+
+
+
+
+
+// Fin seccion 3 //
+
+// seccion 4 //
+.fondo-borde-boot{
+    width: 1000px;
+    padding: 60px;
+    border-radius: 15px;
+    border: 1px solid $secundario;
+    background-color: $fondo;
+    @media screen and ( max-width:1030px) {
+        width: 100%;
+        padding: 15px;
+    } 
+}
+
+.section-bootcamp-cuatro{
+    background: rgb(38,30,57);
+    background: linear-gradient(0deg, rgba(38,30,57,1) 0%, rgba(238,36,120,1) 32%, rgba(38,30,57,1) 100%);
+    padding: 125px 15%;
+    overflow-x: hidden;
+        @media screen and ( max-width:550px) {
+        padding: 65px 15px;
+} 
+
+}
+
+// FIN seccion 4 //
