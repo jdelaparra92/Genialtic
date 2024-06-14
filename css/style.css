@@ -48,8 +48,26 @@
 }
 
 /* Tipografias */
+@font-face {
+  font-family: shield;
+  src: url("../fuente/Shield");
+}
+.shield {
+  font-family: shield;
+}
+
 .span-R {
   color: #EE2478;
+  font-weight: 800;
+}
+
+.span-R-dos {
+  color: #EE2478;
+  font-weight: 600;
+}
+
+.span-V {
+  color: rgb(128, 69, 236);
   font-weight: 800;
 }
 
@@ -75,7 +93,7 @@
 
 .elevar {
   font-size: 5rem;
-  color: #320071;
+  color: rgb(128, 69, 236);
   font-weight: 800;
 }
 @media screen and (max-width: 800px) {
@@ -264,18 +282,15 @@ a {
   color: white;
   text-decoration: none;
   border-radius: 8px;
+  font-family: shield;
+  font-size: 1.8rem;
   transition: 0.3s;
 }
 
 .boton:hover {
-  background: #261E39;
-  color: rgb(128, 69, 236);
-  text-decoration: none;
-  border-radius: 8px;
-  border: 1px solid #EE2478;
-  box-shadow: 8px 7px 24px -16px rgba(255, 255, 255, 0.18);
-  -webkit-box-shadow: 8px 7px 24px -16px rgba(255, 255, 255, 0.18);
-  -moz-box-shadow: 8px 7px 24px -16px rgba(255, 255, 255, 0.18);
+  box-shadow: 10px 10px 15px -5px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: 10px 10px 15px -5px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 10px 10px 15px -5px rgba(255, 255, 255, 0.75);
 }
 
 .boton-dos {
@@ -286,6 +301,7 @@ a {
   border-radius: 8px;
   border: 1px solid #EE2478;
   transition: 0.3s;
+  font-family: shield;
 }
 @media screen and (max-width: 400px) {
   .boton-dos {
@@ -601,13 +617,14 @@ footer {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 70px;
-  width: 340px;
+  padding: 50px;
+  width: 350px;
 }
 @media screen and (max-width: 350px) {
   .libera-genio {
-    padding: 40px;
-    width: 300px;
+    padding: 20px;
+    width: 100%;
+    background-image: none;
   }
 }
 
@@ -815,7 +832,7 @@ footer {
 
 .section-bootcamp-uno {
   background: rgb(38, 30, 57);
-  background: linear-gradient(0deg, rgb(38, 30, 57) 0%, rgb(238, 36, 120) 32%, rgb(38, 30, 57) 100%);
+  background: linear-gradient(180deg, rgb(38, 30, 57) 24%, rgb(238, 36, 120) 68%, rgb(38, 30, 57) 93%);
   padding: 125px 15%;
   overflow-x: hidden;
 }

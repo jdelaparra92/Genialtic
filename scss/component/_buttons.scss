@@ -6,21 +6,16 @@
     color: white;
     text-decoration: none;
     border-radius: 8px;
-
+    font-family: shield;
+    font-size: 1.8rem;
     transition: 0.3s;
 
 }
 
 .boton:hover{
-    background: #261E39;
-    color: $secundario;
-    text-decoration: none;
-    border-radius: 8px;
-    border: 1px solid $primario;
-    box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
-    -webkit-box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
-    -moz-box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
-
+    box-shadow: 10px 10px 15px -5px rgba(255,255,255,0.75);
+    -webkit-box-shadow: 10px 10px 15px -5px rgba(255,255,255,0.75);
+    -moz-box-shadow: 10px 10px 15px -5px rgba(255,255,255,0.75);
 }
 
 .boton-dos{
@@ -31,6 +26,7 @@
     border-radius: 8px;
     border: 1px solid $primario;
     transition: 0.3s;
+    font-family: shield;
     @media screen and ( max-width:400px) {
         padding: 18px 35px;
 }
