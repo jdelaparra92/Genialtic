@@ -519,7 +519,7 @@ footer {
   flex-direction: column;
   padding: 125px 15%;
   background: rgb(38, 30, 57);
-  background: linear-gradient(180deg, rgb(38, 30, 57) 20%, rgb(238, 36, 120) 60%, rgb(175, 34, 100) 81%, rgb(38, 30, 57) 100%);
+  background: linear-gradient(180deg, rgb(38, 30, 57) 3%, rgb(128, 69, 236) 42%, rgb(38, 30, 57) 97%);
   overflow-x: hidden;
 }
 @media screen and (max-width: 550px) {
@@ -652,7 +652,7 @@ footer {
 /* seccion 4 index*/
 .section-cuatro {
   background: rgb(38, 30, 57);
-  background: linear-gradient(180deg, rgb(38, 30, 57) 26%, rgb(238, 36, 120) 100%);
+  background: linear-gradient(180deg, rgb(38, 30, 57) 3%, rgb(128, 69, 236) 42%, rgb(38, 30, 57) 97%);
   padding: 125px 15%;
   text-align: center;
   overflow-x: hidden;
