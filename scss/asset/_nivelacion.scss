@@ -18,7 +18,11 @@
 }
 
 .img-nivelacion-100{
-    width: 100%;
+    width: 300px;
+    @media screen and ( max-width:630px) {
+        width: 100%;
+
+    } 
     
 }
 // fin Main //
@@ -35,7 +39,6 @@
     height: 500px;
     padding: 60px;
     border-radius: 15px;
-    border: 1px solid $secundario;
     background-color: $fondo;
     @media screen and ( max-width:1300px) {
         width: 100%;
@@ -54,3 +57,49 @@
     @include padding;
 }
 // fin seccion 2 //
+
+.backW{
+    background-color: white;
+}
+
+
+.niv-mobile{
+    display: none;
+    @media screen and ( max-width:630px) {
+        display: block;
+    } 
+}
+
+.niv-mobile-dos{
+    @media screen and ( max-width:630px) {
+        display: none;
+    } 
+}
+
+.flex-niv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and ( max-width:630px) {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    } 
+}
+
+
+.mostrarMas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mostrarMas:active{
+    color: $primario;
+}
+
+.flechaAbajo{
+    margin-top: 5px;
+    width: 20px !important;
+    height:auto !important;
+}

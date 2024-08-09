@@ -5,11 +5,29 @@
     gap: 60px;
  
   }
+  .centrar{
+    @include flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .centrar2{
+    @include flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
 
   @mixin padding {
     padding: 125px 15%;
     overflow-x: hidden;
         @media screen and ( max-width:550px) {
+        padding: 65px 15px;
+  } }
+
+  @mixin paddingDos {
+    padding: 125px 15% 400px 15%;
+    overflow-x: hidden;
+        @media screen and ( max-width:1240px) {
         padding: 65px 15px;
   } }
 
@@ -47,4 +65,12 @@
 
   .flex-c > div{
     width: 100%;
+  }
+
+  .navFlex{
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    border: 1px solid $primario;
+
   }

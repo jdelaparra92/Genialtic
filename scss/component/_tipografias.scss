@@ -1,7 +1,7 @@
 /* Tipografias */
 @font-face {
     font-family: shield;
-    src: url("../fuente/Shield");
+    src: url("../fuente/Shield.ttf") format('truetype');
 }
 .shield{
     font-family: shield;
@@ -10,9 +10,17 @@
     color: $primario;
     font-weight: 800;
 }
+.span-S{
+    color: $secundario;
+    font-weight: 800;
+}
 .span-R-dos{
     color: $primario;
     font-weight: 600;
+}
+.span-R-tres{
+    color: $primario;
+    font-weight: 200;
 }
 
 .span-V{
@@ -80,6 +88,22 @@
     }
 }
 
+.principal-grande-dos-light-P{
+
+    font-size: 6rem;
+    color: $primario;
+    font-weight: 400;
+    @media screen and ( max-width:1700px) {
+        font-size: 5rem;
+    }
+    @media screen and ( max-width:1000px) {
+        font-size: 3.5rem;
+    }
+    @media screen and ( max-width:600px) {
+        font-size: 2.5rem;
+    }
+}
+
 .tituloPrincipalB{
 
     font-size: 3.5rem;
@@ -133,6 +157,15 @@
     }
 
 }
+.subTituloPrincipalLightF{
+    font-size: 2rem;
+    color: $fondo;
+    font-weight: 400;
+    @media screen and ( max-width:1500px) {
+        font-size: 1.6rem;
+    }
+
+}
 
 .subTituloPrincipalLightR{
     font-size: 2rem;
@@ -148,6 +181,25 @@
     color: white;
     font-weight: 200;
 }
+.parrafoBoton{
+    font-family: shield;
+    font-size: 1rem;
+    color: white;
+    font-weight: 200;
+    margin-bottom: 12px;
+}
+.parrafoBoton2{
+    font-family: shield;
+    font-size: 1rem;
+    color: white;
+    font-weight: 200;
+}
+
+.parrafo-F{
+    font-size: 1.2rem;
+    color: $fondo;
+    font-weight: 600;
+}
 
 .parrafo-B-light{
     font-size: 1rem;
@@ -156,9 +208,25 @@
     margin-left: 10px;
 }
 
+.parrafo-F-light{
+    font-size: 1rem;
+    color: $fondo;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
 .parrafo-grande{
     font-size: 1.5rem;
     color: $primario;
+    font-weight: 600;
+    @media screen and ( max-width:1500px) {
+        font-size: 1.3rem;
+    }
+}
+
+.parrafo-grandeW{
+    font-size: 1.5rem;
+    color: white;
     font-weight: 600;
     @media screen and ( max-width:1500px) {
         font-size: 1.3rem;

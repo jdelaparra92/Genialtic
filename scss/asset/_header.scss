@@ -1,20 +1,23 @@
 .header{
     background-color: #261E39;
-    padding: 20px 15%;
+    padding: 0px 0px 0px 0px ;
+}
+.header nav{
+    background-color: #261E39;
+    padding: 4px 15% ;
 }
 .header-news{
     background: rgb(128,69,236);
     background: linear-gradient(180deg, rgba(128,69,236,0.7) 0%, rgba(238,36,120,0.7) 100%);
     text-align: center;
-    padding: 15px;
+    padding: 5px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 8px;
 }
 .logo{
-    width: 220px;
+    width: 200px;
 }
 .nav-link{
     color: white;

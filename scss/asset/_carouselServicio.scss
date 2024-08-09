@@ -1,0 +1,195 @@
+.carousel {
+    position: relative;
+    width: 600px;
+    left: 50%;
+    @media screen and (max-width:1240px) {
+    display: none;
+   
+        }
+
+}
+.carousel__item {
+    background-color: $fondo;
+    padding: 20px;
+    position: relative;
+    height: auto;
+    width: 400px;
+    border-radius: 3px;
+    box-shadow: 0 1rem 4rem rgba(0,0,0,.5);
+    position: absolute;
+    transform: translate(-50%,-50%) scale(.1);
+    z-index: 0;
+    transition: all .2s linear;
+    border-radius: 15px;
+    color: $primario;
+
+}
+
+.carousel__item:nth-child(2) {
+background-color: white;
+
+}
+.carousel__item li{
+    list-style: circle;
+
+}
+.carousel__item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.carousel__item--main {
+    transform: translate(-50%,-50%) scale(1);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.carousel__item--left {
+    transform: translate(-110%,-50%) scale(.9);
+    z-index: 1;
+}
+.carousel__item--right {
+    transform: translate(10%,-50%) scale(.9);
+    z-index: 1;
+}
+.carousel__item--left img, .carousel__item--right img {
+    filter: grayscale(80%);
+}
+
+.carousel__item--right:hover {
+    transform: translate(10%,-50%) scale(1.1);
+    z-index: 3;
+    cursor: pointer;
+}
+.carousel__item--left:hover {
+    transform: translate(-110%,-50%) scale(1.1);
+    z-index: 3;
+    cursor: pointer;
+}
+.carousel__item--main:hover {
+    transform: translate(-50%,-50%) scale(1.1);
+}
+.carousel__item:hover > .carousel__text {
+    opacity: 1;
+}
+.carousel__item:hover img {
+    filter: grayscale(0%);
+}
+
+
+
+
+.carousel__btns {
+    position: absolute;
+    transform: translate(-50%, 23rem);
+    display: flex;
+    gap: 2rem;
+    z-index: 113;
+
+}
+.carousel__btn {
+    background-color: transparent;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    border:1px solid currentColor;
+    color: $primario;
+    cursor: pointer;
+}
+.carousel__btn svg {
+    height: 1.8rem;
+    width: 1.8rem;
+}
+.carousel__btn:hover {
+    color: #aaa;
+}
+
+.carouselDos{
+    display: none;
+    gap:15px;
+    @media screen and (max-width:1240px) {
+        @include flex;
+            }
+    @media screen and (max-width:950px) {        
+        flex-direction: column;
+
+        }
+}
+.carousel__item-dos {
+    background-color: $fondo;
+    position: relative;
+    padding: 20px;
+    height:Auto;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1rem 4rem rgba(0,0,0,.5);
+    z-index: 0;
+    transition: all .2s linear;
+    border-radius: 15px;
+    color: $primario;
+
+    @media screen and (max-width:950px) {
+
+        }
+        @media screen and (max-width:670px) {
+            height:auto;
+            }
+li{
+    list-style: circle;
+}
+}
+.carousel__item-dos:nth-child(2) {
+    background-color: white;
+    
+    }
+.carousel__item-dos img {
+width: 100%;
+height: 100px;
+object-fit: cover;
+@media screen and (max-width:950px) {
+    height: 200px;
+}
+
+}
+
+.section-carrousel{
+    background: rgb(38,30,57);
+    background: linear-gradient(6deg, rgba(38,30,57,1) 51%, rgba(128,69,236,1) 100%);
+    @include paddingDos;
+    overflow: visible;
+
+}
+.main-nivelacion > div{
+    width: 50%;
+
+    @media screen and ( max-width:1000px) {
+        width: 100%;
+    }
+}
+
+.marginCarousel{
+    margin-bottom: 400px;
+    @media screen and (max-width:1240px) {
+        margin-bottom: 125px;
+            }
+}
+
+
+.oportunidad{
+    position: absolute;
+    top:-27px;
+    right: 5px;
+    background-color: $primario;
+    border: 1px solid $secundario;
+    padding: 4px;
+}
+
+
+
+.niv-mob{
+    @media screen and (max-width:500px) {
+        display: none;
+            }
+
+}

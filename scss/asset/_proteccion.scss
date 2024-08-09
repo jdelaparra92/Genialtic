@@ -1,0 +1,22 @@
+.mainProtec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 125px 15%;
+    background: rgb(128,69,236);
+    background: linear-gradient(190deg, rgba(128,69,236,1) 0%, rgba(38,30,57,1) 55%);
+
+    @media screen and ( max-width:1000px) {
+        
+        background: linear-gradient(190deg, rgba(128,69,236,1) 10%, rgba(38,30,57,1) 90%);
+    }
+    @media screen and ( max-width:550px) {
+        padding: 65px 15px;
+        
+    } 
+    li{
+        list-style: circle;
+    }
+}

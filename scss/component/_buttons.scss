@@ -1,9 +1,8 @@
 /* Botones */
 .boton{
     padding: 18px 50px;
-    background: $secundario;
-    background: linear-gradient(180deg, rgba(128,69,236,0.7) 0%, rgba(238,36,120,0.7) 100%);
-    color: white;
+    background: white;
+    color: $secundario;
     text-decoration: none;
     border-radius: 8px;
     font-family: shield;
@@ -16,9 +15,16 @@
     box-shadow: 10px 10px 15px -5px rgba(255,255,255,0.75);
     -webkit-box-shadow: 10px 10px 15px -5px rgba(255,255,255,0.75);
     -moz-box-shadow: 10px 10px 15px -5px rgba(255,255,255,0.75);
+    color: white;
+    text-decoration: none;
+    background-color: $secundario;
 }
 
-.boton-dos{
+.boton-plan{
+    height: 100%;
+    display: inline-block;
+    width: 250px;
+    text-align: center;
     padding: 18px 50px;
     background: $fondo;
     color: white;
@@ -33,10 +39,66 @@
 
 }
 
-.boton-dos:hover{
+.boton-plan:hover{
     background: $fondo;
     color: $primario;
     border: 1px solid white;
+    text-decoration: none;
+    box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
+    -webkit-box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
+    -moz-box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
+
+}
+
+
+.boton-dos{
+    display: inline-block;
+    width: 235px;
+    text-align: center;
+    padding: 18px 50px;
+    background: $fondo;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-family: shield;
+    @media screen and ( max-width:400px) {
+        padding: 18px 35px;
+}
+
+}
+
+.boton-dos:hover{
+    background: $fondo;
+    color: $primario;
+    text-decoration: none;
+    box-shadow: 10px 10px 15px -5px rgba(255,255,255,0.75);
+    -webkit-box-shadow: 10px 10px 15px -5px rgba(255,255,255,0.75);
+    -moz-box-shadow: 10px 10px 15px -5px rgba(255,255,255,0.75);
+
+}
+
+.boton-dos-form{
+    width: 100%;
+    padding: 18px 50px;
+    background: $fondo;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid $primario;
+    transition: 0.3s;
+    font-family: shield;
+    @media screen and ( max-width:400px) {
+        padding: 18px 35px;
+}
+
+}
+
+.boton-dos-form:hover{
+    background: $fondo;
+    color: $primario;
+    border: 1px solid white;
+    text-decoration: none;
     box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
     -webkit-box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
     -moz-box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
@@ -58,4 +120,67 @@
 .margin-T-100{
     margin-top: 70px;
 }
+
+
+
+
+.boton-dos-p{
+    text-align: center;
+    padding: 18px 50px;
+    background: white;
+    color: $fondo;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid $primario;
+    transition: 0.3s;
+    font-family: shield;
+    @media screen and ( max-width:400px) {
+        padding: 18px 35px;
+}
+
+}
+
+.boton-dos-p:hover{
+    background: white;
+    color: $primario;
+    border: 1px solid $primario;
+    text-decoration: none;
+    box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
+    -webkit-box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
+    -moz-box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
+
+}
 /* Botones */
+
+
+.boton-tres{
+    padding: 5px 10px;
+    background: $fondo;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid $primario;
+    transition: 0.3s;
+    font-family: shield;
+    font-weight: 400;
+    @media screen and ( max-width:400px) {
+        padding: 18px 35px;
+}
+
+}
+
+.boton-tres:hover{
+    background: $fondo;
+    color: $primario;
+    border: 1px solid white;
+    text-decoration: none;
+    box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
+    -webkit-box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
+    -moz-box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
+
+}
+
+
+.fondo{
+    background-color: $fondo;
+}
