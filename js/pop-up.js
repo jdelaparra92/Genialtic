@@ -13,5 +13,5 @@ function showPopup() {
   }
   
   document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(showPopup, 15000);
+    setTimeout(showPopup, 19000);
   });
