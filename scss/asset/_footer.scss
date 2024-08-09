@@ -10,6 +10,7 @@ footer{
     flex-wrap: wrap;
     @media screen and ( max-width:500px) {
         flex-direction: column;
+        gap: 20px;
     }
 }
 

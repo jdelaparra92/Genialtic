@@ -503,6 +503,10 @@ a {
   margin-top: 70px;
 }
 
+.margin-T-8 {
+  margin-top: 8px;
+}
+
 .boton-dos-p {
   text-align: center;
   padding: 18px 50px;
@@ -657,6 +661,7 @@ footer {
 @media screen and (max-width: 500px) {
   .footer {
     flex-direction: column;
+    gap: 20px;
   }
 }
 
