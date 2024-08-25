@@ -35,3 +35,24 @@
     cursor: pointer;
   }
   
+
+
+  @keyframes cuadrado {
+    0% {
+        top:0px;
+    }
+    50% {
+        top:-10px;
+    }
+
+    100% {
+        top:0px;
+    }
+  }
+  
+.cuadradito{
+    position: relative;
+    font-size: 2rem;
+    animation: cuadrado 2s infinite;
+}
+

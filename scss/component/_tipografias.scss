@@ -1,14 +1,16 @@
 /* Tipografias */
 @font-face {
     font-family: shield;
-    src: url("../fuente/Shield.ttf") format('truetype');
+    src: url("../fuente/Shield.ttf") format("truetype"), url("../fuente/Shield.otf") format("opentype");
 }
+
 .shield{
     font-family: shield;
 }
 .span-R{
     color: $primario;
     font-weight: 800;
+
 }
 .span-S{
     color: $secundario;
@@ -180,6 +182,9 @@
     font-size: 1.2rem;
     color: white;
     font-weight: 200;
+    @media screen and ( max-width:1300px) {
+        font-size: 1rem;
+    }
 }
 .parrafoBoton{
     font-family: shield;
@@ -228,6 +233,7 @@
     font-size: 1.5rem;
     color: white;
     font-weight: 600;
+    
     @media screen and ( max-width:1500px) {
         font-size: 1.3rem;
     }

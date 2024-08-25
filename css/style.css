@@ -76,7 +76,7 @@
 /* Tipografias */
 @font-face {
   font-family: shield;
-  src: url("../fuente/Shield.ttf") format("truetype");
+  src: url("../fuente/Shield.ttf") format("truetype"), url("../fuente/Shield.otf") format("opentype");
 }
 .shield {
   font-family: shield;
@@ -294,6 +294,11 @@
   color: white;
   font-weight: 200;
 }
+@media screen and (max-width: 1300px) {
+  .parrafo-B {
+    font-size: 1rem;
+  }
+}
 
 .parrafoBoton {
   font-family: shield;
@@ -401,6 +406,7 @@ a {
   color: white;
   text-decoration: none;
   background-color: rgb(128, 69, 236);
+  font-family: shield;
 }
 
 .boton-plan {
@@ -431,6 +437,7 @@ a {
   box-shadow: 8px 7px 24px -16px rgba(255, 255, 255, 0.18);
   -webkit-box-shadow: 8px 7px 24px -16px rgba(255, 255, 255, 0.18);
   -moz-box-shadow: 8px 7px 24px -16px rgba(255, 255, 255, 0.18);
+  font-family: shield;
 }
 
 .boton-dos {
@@ -489,6 +496,11 @@ a {
 
 .margin-B-100 {
   margin-bottom: 100px;
+}
+@media screen and (max-width: 1000px) {
+  .margin-B-100 {
+    margin-bottom: 40px;
+  }
 }
 
 .margin-B-50 {
@@ -770,6 +782,33 @@ footer a:hover {
   color: white;
 }
 
+.marginL {
+  margin-left: 25px;
+}
+@media screen and (max-width: 991px) {
+  .marginL {
+    margin-left: 0px;
+  }
+}
+
+.boton-dos-footerr {
+  padding: 9px 12px;
+  background: #261E39;
+  color: rgb(128, 69, 236);
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-family: shield;
+}
+
+.boton-dos-footerr:hover {
+  background: rgb(128, 69, 236);
+  box-shadow: 6px 6px 15px -5px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: 6px 6px 15px -5px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 6px 6px 15px -5px rgba(255, 255, 255, 0.75);
+  color: white;
+}
+
 /* Main index */
 .main-index {
   display: flex;
@@ -897,10 +936,6 @@ footer a:hover {
 
 .flecha-dos {
   padding: 35px;
-  background-image: url("../img/flechas2.svg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
   text-align: center;
   width: 600px;
 }
@@ -1031,12 +1066,7 @@ footer a:hover {
 }
 
 .img-nivelacion-100 {
-  width: 300px;
-}
-@media screen and (max-width: 630px) {
-  .img-nivelacion-100 {
-    width: 100%;
-  }
+  width: 100px;
 }
 
 .niv-cont-uno {
@@ -1144,10 +1174,6 @@ footer a:hover {
 }
 
 .fondo-flecha {
-  background-image: url("../img/flechas-debajo.svg");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
   padding: 30px;
 }
 
@@ -1619,7 +1645,6 @@ footer a:hover {
   top: -27px;
   right: 5px;
   background-color: #EE2478;
-  border: 1px solid rgb(128, 69, 236);
   padding: 4px;
 }
 
@@ -1627,6 +1652,59 @@ footer a:hover {
   .niv-mob {
     display: none;
   }
+}
+
+.section-plan {
+  background: rgb(38, 30, 57);
+  background: linear-gradient(6deg, rgb(38, 30, 57) 51%, rgb(128, 69, 236) 100%);
+  padding: 125px 15%;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 550px) {
+  .section-plan {
+    padding: 65px 15px;
+  }
+}
+.section-plan li {
+  list-style: none;
+}
+
+.carousel__item-doss {
+  background-color: #261E39;
+  position: relative;
+  padding: 20px;
+  height: Auto;
+  width: 750px;
+  border-radius: 3px;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  transition: all 0.2s linear;
+  border-radius: 15px;
+  color: #EE2478;
+}
+@media screen and (max-width: 800px) {
+  .carousel__item-doss {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 670px) {
+  .carousel__item-doss {
+    height: auto;
+  }
+}
+.carousel__item-doss li {
+  list-style: none;
+}
+
+.carousel__item-doss:nth-child(2) {
+  background-color: white;
+}
+
+.flexCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .popup {
@@ -1666,6 +1744,23 @@ footer a:hover {
   right: 10px;
   font-size: 20px;
   cursor: pointer;
+}
+
+@keyframes cuadrado {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -10px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.cuadradito {
+  position: relative;
+  font-size: 2rem;
+  animation: cuadrado 2s infinite;
 }
 
 .progress {

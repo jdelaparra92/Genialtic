@@ -18,6 +18,7 @@
     color: white;
     text-decoration: none;
     background-color: $secundario;
+    font-family: shield;
 }
 
 .boton-plan{
@@ -47,6 +48,7 @@
     box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
     -webkit-box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
     -moz-box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
+    font-family: shield;
 
 }
 
@@ -107,6 +109,10 @@
 
 .margin-B-100{
     margin-bottom: 100px;
+    @media screen and ( max-width:1000px) {
+        margin-bottom: 40px;
+}
+
 }
 
 .margin-B-50{

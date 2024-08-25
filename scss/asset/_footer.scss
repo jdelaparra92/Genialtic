@@ -119,3 +119,31 @@ footer a{
 footer a:hover{
     color: white;
 }
+
+.marginL{
+    margin-left: 25px;
+    @media screen and ( max-width:991px) {
+        margin-left: 0px;
+    }
+}
+
+
+.boton-dos-footerr{
+    padding: 9px 12px;
+    background: $fondo;
+    color: $secundario;
+    text-decoration: none;
+    border-radius: 8px;
+ 
+    transition: 0.3s;
+    font-family: shield;
+}
+
+.boton-dos-footerr:hover{
+    background: $secundario;
+    box-shadow: 6px 6px 15px -5px rgba(255,255,255,0.75);
+    -webkit-box-shadow: 6px 6px 15px -5px rgba(255,255,255,0.75);
+    -moz-box-shadow: 6px 6px 15px -5px rgba(255,255,255,0.75);
+    color: white;
+
+}
