@@ -88,7 +88,7 @@
 }
 
 .span-S {
-  color: rgb(128, 69, 236);
+  color: #8045ec;
   font-weight: 800;
 }
 
@@ -103,7 +103,7 @@
 }
 
 .span-V {
-  color: rgb(128, 69, 236);
+  color: #8045ec;
   font-weight: 800;
 }
 
@@ -391,7 +391,7 @@ a {
 .boton {
   padding: 18px 50px;
   background: white;
-  color: rgb(128, 69, 236);
+  color: #8045ec;
   text-decoration: none;
   border-radius: 8px;
   font-family: shield;
@@ -405,7 +405,7 @@ a {
   -moz-box-shadow: 10px 10px 15px -5px rgba(255, 255, 255, 0.75);
   color: white;
   text-decoration: none;
-  background-color: rgb(128, 69, 236);
+  background-color: #8045ec;
   font-family: shield;
 }
 
@@ -708,7 +708,7 @@ footer {
 .boton-dos-footer {
   padding: 9px 12px;
   background: white;
-  color: rgb(128, 69, 236);
+  color: #8045ec;
   text-decoration: none;
   border-radius: 8px;
   transition: 0.3s;
@@ -716,7 +716,7 @@ footer {
 }
 
 .boton-dos-footer:hover {
-  background: rgb(128, 69, 236);
+  background: #8045ec;
   box-shadow: 6px 6px 15px -5px rgba(255, 255, 255, 0.75);
   -webkit-box-shadow: 6px 6px 15px -5px rgba(255, 255, 255, 0.75);
   -moz-box-shadow: 6px 6px 15px -5px rgba(255, 255, 255, 0.75);
@@ -725,7 +725,7 @@ footer {
 
 .boton-tres-footer {
   padding: 9px 12px;
-  background: rgb(128, 69, 236);
+  background: #8045ec;
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -735,8 +735,8 @@ footer {
 
 .boton-tres-footer:hover {
   background: white;
-  color: rgb(128, 69, 236);
-  border: 1px solid rgb(128, 69, 236);
+  color: #8045ec;
+  border: 1px solid #8045ec;
   box-shadow: 6px 6px 15px -5px rgba(255, 255, 255, 0.75);
   -webkit-box-shadow: 6px 6px 15px -5px rgba(255, 255, 255, 0.75);
   -moz-box-shadow: 6px 6px 15px -5px rgba(255, 255, 255, 0.75);
@@ -794,7 +794,7 @@ footer a:hover {
 .boton-dos-footerr {
   padding: 9px 12px;
   background: #261E39;
-  color: rgb(128, 69, 236);
+  color: #8045ec;
   text-decoration: none;
   border-radius: 8px;
   transition: 0.3s;
@@ -802,7 +802,7 @@ footer a:hover {
 }
 
 .boton-dos-footerr:hover {
-  background: rgb(128, 69, 236);
+  background: #8045ec;
   box-shadow: 6px 6px 15px -5px rgba(255, 255, 255, 0.75);
   -webkit-box-shadow: 6px 6px 15px -5px rgba(255, 255, 255, 0.75);
   -moz-box-shadow: 6px 6px 15px -5px rgba(255, 255, 255, 0.75);
