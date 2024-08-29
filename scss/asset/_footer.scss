@@ -41,42 +41,41 @@ footer{
 
 .boton-dos-footer{
     padding: 9px 12px;
-    background: white;
-    color: $secundario;
+    background: $botonColor;
+    color: gray;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 50px;
  
     transition: 0.3s;
-    font-family: shield;
+    font-family: shield !important;
 }
 
 .boton-dos-footer:hover{
-    background: $secundario;
-    box-shadow: 6px 6px 15px -5px rgba(255,255,255,0.75);
-    -webkit-box-shadow: 6px 6px 15px -5px rgba(255,255,255,0.75);
-    -moz-box-shadow: 6px 6px 15px -5px rgba(255,255,255,0.75);
-    color: white;
+    background: $botonColor2;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    color: $fondo;
 
 }
 
 .boton-tres-footer{
     padding: 9px 12px;
-    background: $secundario;
-    color: white;
+    background: $botonColor2;
+    color: gray;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 50px;
  
     transition: 0.3s;
-    font-family: shield;
+    font-family: shield !important;
 }
 
 .boton-tres-footer:hover{
-    background: white;
-    color:$secundario ;
-    border: 1px solid $secundario;
-    box-shadow: 6px 6px 15px -5px rgba(255,255,255,0.75);
-    -webkit-box-shadow: 6px 6px 15px -5px rgba(255,255,255,0.75);
-    -moz-box-shadow: 6px 6px 15px -5px rgba(255,255,255,0.75);
+    background: $botonColor2;
+    color:$fondo ;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 
 
 }
@@ -130,20 +129,24 @@ footer a:hover{
 
 .boton-dos-footerr{
     padding: 9px 12px;
-    background: $fondo;
-    color: $secundario;
+    background: $botonColor;
+    color: gray;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 50px;
  
     transition: 0.3s;
-    font-family: shield;
+    font-family: shield !important;
 }
 
 .boton-dos-footerr:hover{
-    background: $secundario;
-    box-shadow: 6px 6px 15px -5px rgba(255,255,255,0.75);
-    -webkit-box-shadow: 6px 6px 15px -5px rgba(255,255,255,0.75);
-    -moz-box-shadow: 6px 6px 15px -5px rgba(255,255,255,0.75);
-    color: white;
+    background: $botonColor2;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    color: $fondo;
 
+}
+
+a{
+    text-decoration: none !important;
 }

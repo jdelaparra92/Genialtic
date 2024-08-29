@@ -203,7 +203,10 @@
 .parrafo-F{
     font-size: 1.2rem;
     color: $fondo;
-    font-weight: 600;
+    font-weight: 200;
+    @media screen and ( max-width:1300px) {
+        font-size: 1rem;
+    }
 }
 
 .parrafo-B-light{

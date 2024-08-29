@@ -1,24 +1,24 @@
 /* Botones */
 .boton{
     padding: 18px 50px;
-    background: white;
-    color: $secundario;
+    background: $botonColor;
+    color: gray;
     text-decoration: none;
-    border-radius: 8px;
-    font-family: shield;
+    border-radius: 50px;
+    font-family: shield !important;
     font-size: 1.8rem;
     transition: 0.3s;
 
 }
 
 .boton:hover{
-    box-shadow: 10px 10px 15px -5px rgba(255,255,255,0.75);
-    -webkit-box-shadow: 10px 10px 15px -5px rgba(255,255,255,0.75);
-    -moz-box-shadow: 10px 10px 15px -5px rgba(255,255,255,0.75);
-    color: white;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    color: $fondo;
     text-decoration: none;
-    background-color: $secundario;
-    font-family: shield;
+    background-color: $botonColor2;
+    font-family: shield !important;
 }
 
 .boton-plan{
@@ -27,13 +27,12 @@
     width: 250px;
     text-align: center;
     padding: 18px 50px;
-    background: $fondo;
-    color: white;
+    background: $botonColor;
+    color: grey;
     text-decoration: none;
-    border-radius: 8px;
-    border: 1px solid $primario;
+    border-radius: 50px;
     transition: 0.3s;
-    font-family: shield;
+    font-family: shield !important;
     @media screen and ( max-width:400px) {
         padding: 18px 35px;
 }
@@ -41,14 +40,13 @@
 }
 
 .boton-plan:hover{
-    background: $fondo;
-    color: $primario;
-    border: 1px solid white;
+    background: $botonColor2;
+    color: $fondo;
     text-decoration: none;
-    box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
-    -webkit-box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
-    -moz-box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
-    font-family: shield;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    font-family: shield !important;
 
 }
 
@@ -58,12 +56,12 @@
     width: 235px;
     text-align: center;
     padding: 18px 50px;
-    background: $fondo;
-    color: white;
+    background: $botonColor;
+    color: grey;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 50px;
     transition: 0.3s;
-    font-family: shield;
+    font-family: shield !important;
     @media screen and ( max-width:400px) {
         padding: 18px 35px;
 }
@@ -71,25 +69,25 @@
 }
 
 .boton-dos:hover{
-    background: $fondo;
-    color: $primario;
+    background: $botonColor2;
+    color: $fondo;
     text-decoration: none;
-    box-shadow: 10px 10px 15px -5px rgba(255,255,255,0.75);
-    -webkit-box-shadow: 10px 10px 15px -5px rgba(255,255,255,0.75);
-    -moz-box-shadow: 10px 10px 15px -5px rgba(255,255,255,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 
 }
 
 .boton-dos-form{
     width: 100%;
+    border: none;
     padding: 18px 50px;
-    background: $fondo;
-    color: white;
+    background: $botonColor;
+    color: grey;
     text-decoration: none;
-    border-radius: 8px;
-    border: 1px solid $primario;
+    border-radius: 50px;
     transition: 0.3s;
-    font-family: shield;
+    font-family: shield !important;
     @media screen and ( max-width:400px) {
         padding: 18px 35px;
 }
@@ -97,13 +95,13 @@
 }
 
 .boton-dos-form:hover{
-    background: $fondo;
-    color: $primario;
-    border: 1px solid white;
+    border: none;
+    background: $botonColor2;
+    color: $fondo;
     text-decoration: none;
-    box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
-    -webkit-box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
-    -moz-box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 
 }
 
@@ -136,13 +134,12 @@
 .boton-dos-p{
     text-align: center;
     padding: 18px 50px;
-    background: white;
-    color: $fondo;
+    background: $botonColor2;
+    color: gray;
     text-decoration: none;
-    border-radius: 8px;
-    border: 1px solid $primario;
+    border-radius: 50px;
     transition: 0.3s;
-    font-family: shield;
+    font-family: shield !important;
     @media screen and ( max-width:400px) {
         padding: 18px 35px;
 }
@@ -150,13 +147,12 @@
 }
 
 .boton-dos-p:hover{
-    background: white;
-    color: $primario;
-    border: 1px solid $primario;
+    background: $botonColor2;
+    color: $fondo;
     text-decoration: none;
-    box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
-    -webkit-box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
-    -moz-box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 
 }
 /* Botones */
@@ -164,13 +160,12 @@
 
 .boton-tres{
     padding: 5px 10px;
-    background: $fondo;
-    color: white;
+    background: $botonColor2;
+    color: gray;
     text-decoration: none;
-    border-radius: 8px;
-    border: 1px solid $primario;
+    border-radius: 50px;
     transition: 0.3s;
-    font-family: shield;
+    font-family: shield !important;
     font-weight: 400;
     @media screen and ( max-width:400px) {
         padding: 18px 35px;
@@ -179,13 +174,12 @@
 }
 
 .boton-tres:hover{
-    background: $fondo;
-    color: $primario;
-    border: 1px solid white;
+    background: $botonColor2;
+    color: $fondo;
     text-decoration: none;
-    box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
-    -webkit-box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
-    -moz-box-shadow: 8px 7px 24px -16px rgba(255,255,255,0.18);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 
 }
 

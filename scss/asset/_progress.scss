@@ -144,6 +144,24 @@
         transform: rotate(126deg);
     }
 }
-@media only screen and (max-width: 990px){
-    .progress{ margin-bottom: 20px; }
+@media only screen and (max-width: 1000px){
+    .progress{
+        margin-top: 5px;
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+
+    }
+    .progress .progress-value {
+        top: -27%;
+        left: 6%;
+    }
+
 }
+.progressoV {
+    background: #fff !important;
+    color: $fondo !important;
+
+}
+
+

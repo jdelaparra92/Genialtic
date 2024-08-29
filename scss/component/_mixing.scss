@@ -74,3 +74,51 @@
     border: 1px solid $primario;
 
   }
+
+  .planesFlex{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    @media screen and ( max-width:1000px) {
+        flex-direction: column;
+} 
+  }
+
+  .planesFlex > div{
+    width: 100%;
+  }
+
+
+  .planesMflex{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .planesCFlex{
+    display: none;
+
+    @media screen and ( max-width:1000px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap:15px;
+} 
+
+  }
+  .planesCcFlex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:15px
+
+  }
+
+  .planDeskt{
+    @media screen and ( max-width:1000px) {
+      display: none;
+} 
+    
+  }

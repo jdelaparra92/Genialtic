@@ -73,6 +73,52 @@
   border: 1px solid #EE2478;
 }
 
+.planesFlex {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .planesFlex {
+    flex-direction: column;
+  }
+}
+
+.planesFlex > div {
+  width: 100%;
+}
+
+.planesMflex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.planesCFlex {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .planesCFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.planesCcFlex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+  .planDeskt {
+    display: none;
+  }
+}
+
 /* Tipografias */
 @font-face {
   font-family: shield;
@@ -318,7 +364,12 @@
 .parrafo-F {
   font-size: 1.2rem;
   color: #261E39;
-  font-weight: 600;
+  font-weight: 200;
+}
+@media screen and (max-width: 1300px) {
+  .parrafo-F {
+    font-size: 1rem;
+  }
 }
 
 .parrafo-B-light {
@@ -382,6 +433,10 @@ a {
   text-decoration: none;
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
 @font-face {
   font-family: Musont;
   src: url("../fuente/Musont.ttf");
@@ -390,23 +445,23 @@ a {
 /* Botones */
 .boton {
   padding: 18px 50px;
-  background: white;
-  color: #8045ec;
+  background: #ece8e8;
+  color: gray;
   text-decoration: none;
-  border-radius: 8px;
-  font-family: shield;
+  border-radius: 50px;
+  font-family: shield !important;
   font-size: 1.8rem;
   transition: 0.3s;
 }
 
 .boton:hover {
-  box-shadow: 10px 10px 15px -5px rgba(255, 255, 255, 0.75);
-  -webkit-box-shadow: 10px 10px 15px -5px rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: 10px 10px 15px -5px rgba(255, 255, 255, 0.75);
-  color: white;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  color: #261E39;
   text-decoration: none;
-  background-color: #8045ec;
-  font-family: shield;
+  background-color: #f4f4f4;
+  font-family: shield !important;
 }
 
 .boton-plan {
@@ -415,13 +470,12 @@ a {
   width: 250px;
   text-align: center;
   padding: 18px 50px;
-  background: #261E39;
-  color: white;
+  background: #ece8e8;
+  color: grey;
   text-decoration: none;
-  border-radius: 8px;
-  border: 1px solid #EE2478;
+  border-radius: 50px;
   transition: 0.3s;
-  font-family: shield;
+  font-family: shield !important;
 }
 @media screen and (max-width: 400px) {
   .boton-plan {
@@ -430,14 +484,13 @@ a {
 }
 
 .boton-plan:hover {
-  background: #261E39;
-  color: #EE2478;
-  border: 1px solid white;
+  background: #f4f4f4;
+  color: #261E39;
   text-decoration: none;
-  box-shadow: 8px 7px 24px -16px rgba(255, 255, 255, 0.18);
-  -webkit-box-shadow: 8px 7px 24px -16px rgba(255, 255, 255, 0.18);
-  -moz-box-shadow: 8px 7px 24px -16px rgba(255, 255, 255, 0.18);
-  font-family: shield;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  font-family: shield !important;
 }
 
 .boton-dos {
@@ -445,12 +498,12 @@ a {
   width: 235px;
   text-align: center;
   padding: 18px 50px;
-  background: #261E39;
-  color: white;
+  background: #ece8e8;
+  color: grey;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 50px;
   transition: 0.3s;
-  font-family: shield;
+  font-family: shield !important;
 }
 @media screen and (max-width: 400px) {
   .boton-dos {
@@ -459,24 +512,24 @@ a {
 }
 
 .boton-dos:hover {
-  background: #261E39;
-  color: #EE2478;
+  background: #f4f4f4;
+  color: #261E39;
   text-decoration: none;
-  box-shadow: 10px 10px 15px -5px rgba(255, 255, 255, 0.75);
-  -webkit-box-shadow: 10px 10px 15px -5px rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: 10px 10px 15px -5px rgba(255, 255, 255, 0.75);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .boton-dos-form {
   width: 100%;
+  border: none;
   padding: 18px 50px;
-  background: #261E39;
-  color: white;
+  background: #ece8e8;
+  color: grey;
   text-decoration: none;
-  border-radius: 8px;
-  border: 1px solid #EE2478;
+  border-radius: 50px;
   transition: 0.3s;
-  font-family: shield;
+  font-family: shield !important;
 }
 @media screen and (max-width: 400px) {
   .boton-dos-form {
@@ -485,13 +538,13 @@ a {
 }
 
 .boton-dos-form:hover {
-  background: #261E39;
-  color: #EE2478;
-  border: 1px solid white;
+  border: none;
+  background: #f4f4f4;
+  color: #261E39;
   text-decoration: none;
-  box-shadow: 8px 7px 24px -16px rgba(255, 255, 255, 0.18);
-  -webkit-box-shadow: 8px 7px 24px -16px rgba(255, 255, 255, 0.18);
-  -moz-box-shadow: 8px 7px 24px -16px rgba(255, 255, 255, 0.18);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .margin-B-100 {
@@ -522,13 +575,12 @@ a {
 .boton-dos-p {
   text-align: center;
   padding: 18px 50px;
-  background: white;
-  color: #261E39;
+  background: #f4f4f4;
+  color: gray;
   text-decoration: none;
-  border-radius: 8px;
-  border: 1px solid #EE2478;
+  border-radius: 50px;
   transition: 0.3s;
-  font-family: shield;
+  font-family: shield !important;
 }
 @media screen and (max-width: 400px) {
   .boton-dos-p {
@@ -537,25 +589,23 @@ a {
 }
 
 .boton-dos-p:hover {
-  background: white;
-  color: #EE2478;
-  border: 1px solid #EE2478;
+  background: #f4f4f4;
+  color: #261E39;
   text-decoration: none;
-  box-shadow: 8px 7px 24px -16px rgba(255, 255, 255, 0.18);
-  -webkit-box-shadow: 8px 7px 24px -16px rgba(255, 255, 255, 0.18);
-  -moz-box-shadow: 8px 7px 24px -16px rgba(255, 255, 255, 0.18);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 /* Botones */
 .boton-tres {
   padding: 5px 10px;
-  background: #261E39;
-  color: white;
+  background: #f4f4f4;
+  color: gray;
   text-decoration: none;
-  border-radius: 8px;
-  border: 1px solid #EE2478;
+  border-radius: 50px;
   transition: 0.3s;
-  font-family: shield;
+  font-family: shield !important;
   font-weight: 400;
 }
 @media screen and (max-width: 400px) {
@@ -565,13 +615,12 @@ a {
 }
 
 .boton-tres:hover {
-  background: #261E39;
-  color: #EE2478;
-  border: 1px solid white;
+  background: #f4f4f4;
+  color: #261E39;
   text-decoration: none;
-  box-shadow: 8px 7px 24px -16px rgba(255, 255, 255, 0.18);
-  -webkit-box-shadow: 8px 7px 24px -16px rgba(255, 255, 255, 0.18);
-  -moz-box-shadow: 8px 7px 24px -16px rgba(255, 255, 255, 0.18);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .fondo {
@@ -707,39 +756,38 @@ footer {
 
 .boton-dos-footer {
   padding: 9px 12px;
-  background: white;
-  color: #8045ec;
+  background: #ece8e8;
+  color: gray;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 50px;
   transition: 0.3s;
-  font-family: shield;
+  font-family: shield !important;
 }
 
 .boton-dos-footer:hover {
-  background: #8045ec;
-  box-shadow: 6px 6px 15px -5px rgba(255, 255, 255, 0.75);
-  -webkit-box-shadow: 6px 6px 15px -5px rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: 6px 6px 15px -5px rgba(255, 255, 255, 0.75);
-  color: white;
+  background: #f4f4f4;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  color: #261E39;
 }
 
 .boton-tres-footer {
   padding: 9px 12px;
-  background: #8045ec;
-  color: white;
+  background: #f4f4f4;
+  color: gray;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 50px;
   transition: 0.3s;
-  font-family: shield;
+  font-family: shield !important;
 }
 
 .boton-tres-footer:hover {
-  background: white;
-  color: #8045ec;
-  border: 1px solid #8045ec;
-  box-shadow: 6px 6px 15px -5px rgba(255, 255, 255, 0.75);
-  -webkit-box-shadow: 6px 6px 15px -5px rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: 6px 6px 15px -5px rgba(255, 255, 255, 0.75);
+  background: #f4f4f4;
+  color: #261E39;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .flex-footer {
@@ -793,20 +841,24 @@ footer a:hover {
 
 .boton-dos-footerr {
   padding: 9px 12px;
-  background: #261E39;
-  color: #8045ec;
+  background: #ece8e8;
+  color: gray;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 50px;
   transition: 0.3s;
-  font-family: shield;
+  font-family: shield !important;
 }
 
 .boton-dos-footerr:hover {
-  background: #8045ec;
-  box-shadow: 6px 6px 15px -5px rgba(255, 255, 255, 0.75);
-  -webkit-box-shadow: 6px 6px 15px -5px rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: 6px 6px 15px -5px rgba(255, 255, 255, 0.75);
-  color: white;
+  background: #f4f4f4;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  color: #261E39;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 /* Main index */
@@ -1707,6 +1759,37 @@ footer a:hover {
   flex-direction: column;
 }
 
+.carousel__item-cel {
+  background-color: #261E39;
+  position: relative;
+  padding: 20px;
+  height: Auto;
+  width: 450px;
+  border-radius: 3px;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  transition: all 0.2s linear;
+  border-radius: 15px;
+  color: #EE2478;
+}
+@media screen and (max-width: 550px) {
+  .carousel__item-cel {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 670px) {
+  .carousel__item-cel {
+    height: auto;
+  }
+}
+.carousel__item-cel li {
+  list-style: none;
+}
+
+.carousel__item-cel:nth-child(2) {
+  background-color: white;
+}
+
 .popup {
   display: none;
   position: fixed;
@@ -1926,10 +2009,22 @@ footer a:hover {
     transform: rotate(126deg);
   }
 }
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 1000px) {
   .progress {
-    margin-bottom: 20px;
+    margin-top: 5px;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
   }
+
+  .progress .progress-value {
+    top: -27%;
+    left: 6%;
+  }
+}
+.progressoV {
+  background: #fff !important;
+  color: #261E39 !important;
 }
 
 /*# sourceMappingURL=style.css.map */

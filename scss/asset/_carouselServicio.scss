@@ -242,3 +242,35 @@ li{
         flex-direction: column;
 
     }
+
+
+
+
+    .carousel__item-cel {
+        background-color: $fondo;
+        position: relative;
+        padding: 20px;
+        height:Auto;
+        width: 450px;
+        border-radius: 3px;
+        box-shadow: 0 1rem 4rem rgba(0,0,0,.5);
+        z-index: 0;
+        transition: all .2s linear;
+        border-radius: 15px;
+        color: $primario;
+    
+        @media screen and (max-width:550px) {
+            width: 100%;
+    
+            }
+            @media screen and (max-width:670px) {
+                height:auto;
+                }
+    li{
+        list-style: none;
+    }
+    }
+    .carousel__item-cel:nth-child(2) {
+        background-color: white;
+        
+        }
