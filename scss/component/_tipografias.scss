@@ -243,5 +243,24 @@
 }
 
 
+.subTituloCardsR{
+    font-size: 3rem;
+    color: $primario;
+    font-weight: 800;
+    @media screen and ( max-width:1500px) {
+        font-size: 2rem;
+    }
+    @media screen and ( max-width:700px) {
+        font-size: 1.7rem;
+    }
+}
 
+
+.span-SS{
+    color: $secundario;
+    font-weight: 800;
+    @media screen and ( max-width:700px) {
+        font-size: 0.8rem;
+    }
+}
 /* Tipografias */
