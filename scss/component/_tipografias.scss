@@ -16,6 +16,10 @@
     color: $secundario;
     font-weight: 800;
 }
+.span-Fondo{
+    color: $fondo;
+    font-weight: 800;
+}
 .span-R-dos{
     color: $primario;
     font-weight: 600;
@@ -262,5 +266,39 @@
     @media screen and ( max-width:700px) {
         font-size: 0.8rem;
     }
+}
+
+
+
+
+.parrafo-CardF{
+    font-size: 0.75rem;
+    color: $fondo;
+    font-weight: 200;
+
+}
+.parrafo-CardB{
+    font-size: 0.75rem;
+    color: white;
+    font-weight: 200;
+
+}
+
+
+
+.principalCardPrecioB{
+
+    font-size: 2rem;
+    color: white;
+    font-weight: 800;
+
+}
+
+.principalCardPrecioF{
+
+    font-size: 2rem;
+    color: $fondo;
+    font-weight: 800;
+
 }
 /* Tipografias */

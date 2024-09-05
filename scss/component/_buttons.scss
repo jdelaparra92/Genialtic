@@ -8,10 +8,42 @@
     font-family: shield !important;
     font-size: 1.8rem;
     transition: 0.3s;
-
+    @media screen and ( max-width:500px) {
+        font-size: 1.2rem;
+}
 }
 
 .boton:hover{
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    color: $fondo;
+    text-decoration: none;
+    background-color: $botonColor2;
+    font-family: shield !important;
+}
+.botonContC{
+    @media screen and ( max-width:500px) {
+        padding-top: 20px;
+}
+    
+}
+.boton-chico{
+   
+    padding: 18px 50px;
+    background: $botonColor;
+    color: gray;
+    text-decoration: none;
+    border-radius: 50px;
+    font-family: shield !important;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    @media screen and ( max-width:500px) {
+        font-size: 1rem;
+}
+}
+
+.boton-chico:hover{
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
@@ -108,7 +140,10 @@
 .margin-B-100{
     margin-bottom: 100px;
     @media screen and ( max-width:1000px) {
-        margin-bottom: 40px;
+        margin-bottom: 70px;
+}
+@media screen and ( max-width:600px) {
+    margin-bottom: 50px;
 }
 
 }
@@ -121,10 +156,18 @@
     margin-bottom: 30px;
 }
 
+.margin-B-10{
+    margin-bottom: 10px;
+}
+.margin-B-20{
+    margin-bottom: 20px;
+}
 .margin-T-100{
     margin-top: 70px;
 }
-
+.margin-T-20{
+    margin-top: 20px;
+}
 .margin-T-8{
     margin-top: 8px;
 }
@@ -187,3 +230,4 @@
 .fondo{
     background-color: $fondo;
 }
+

@@ -1,7 +1,18 @@
 // main //
+.lineaDos {
+    color: white;
+    width: 460px;   
+    @media screen and ( max-width:700px) {
+        width: 200px;  
+            }
+    @media screen and ( max-width:500px) {
+display: none;
+    }
+
+}
 .main-boot{
     background: rgb(38,30,57);
-    background: linear-gradient(6deg, rgba(38,30,57,1) 51%, rgba(128,69,236,1) 100%);
+    background: linear-gradient(0deg, rgba(38,30,57,1) 0%, rgba(128,69,236,1) 91%, rgba(38,30,57,1) 100%);
     @include padding;
 }
 .fondo-flecha{
@@ -9,9 +20,10 @@
 }
 
 .grid-boot{
+    justify-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto 50px auto;
     grid-template-areas: 
     "p1 p2 p3"
     "hr hr hr"
@@ -62,16 +74,23 @@
 .hr{
     grid-area: hr;
 }
+
+.fondo-bordeBoot {
+    width: 600px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #261E39;
+}
 // fin main //
 
 // seccion 1 //
 .iconos{
-    width: 150px;
+    width: 60px;
 }
 .section-bootcamp-uno{
-    background: rgb(38,30,57);
-    background: linear-gradient(180deg, rgba(38,30,57,1) 24%, rgba(238,36,120,1) 68%, rgba(38,30,57,1) 93%);
-    padding: 125px 15%;
+    background: rgb(238,36,120);
+    background: linear-gradient(0deg, rgba(238,36,120,1) 1%, rgba(38,30,57,1) 100%);
+    padding: 65px 15%;
     overflow-x: hidden;
         @media screen and ( max-width:550px) {
         padding: 65px 15px;
@@ -99,16 +118,23 @@
 
 .fondo-borde-flex-tres{
     width: 100%;
-    height: 430px;
+    height: 330px;
     padding: 60px;
     border-radius: 15px;
     background-color: $fondo;
+    @media screen and ( max-width:1500px) {
+        width: 100%;
+        height: 420px;
+        padding: 50px;
+    } 
     @media screen and ( max-width:1300px) {
         width: 100%;
-        height: 500px;
+        height: 360px;
+        padding: 50px;
     } 
     @media screen and ( max-width:1100px) {
         height: 550px;
+        padding: 40px;
     } 
     @media screen and ( max-width:1100px) {
         height: auto;
@@ -142,8 +168,8 @@
 
 .section-bootcamp-tres{
     background: rgb(38,30,57);
-    background: linear-gradient(11deg, rgba(38,30,57,1) 20%, rgba(128,69,236,1) 44%, rgba(38,30,57,1) 72%);
-    padding: 125px 15%;
+    background: linear-gradient(180deg, rgba(38,30,57,1) 7%, rgba(128,69,236,1) 47%, rgba(38,30,57,1) 95%);
+    padding: 65px 15%;
     overflow-x: hidden;
         @media screen and ( max-width:550px) {
         padding: 65px 15px;
@@ -172,7 +198,7 @@
 .section-bootcamp-cuatro{
     background: rgb(38,30,57);
     background: linear-gradient(0deg, rgba(38,30,57,1) 0%, rgba(238,36,120,1) 32%, rgba(38,30,57,1) 100%);
-    padding: 125px 15%;
+    padding: 65px 15%;
     overflow-x: hidden;
         @media screen and ( max-width:550px) {
         padding: 65px 15px;
@@ -181,3 +207,66 @@
 }
 
 // FIN seccion 4 //
+// PAGOS //
+.fondo-pagos {
+    width: 1000px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: white;
+    @media screen and ( max-width:1030px) {
+        width: 100%;
+        padding: 15px;
+    } 
+}
+
+.section-pagos{
+    background: rgb(38,30,57);
+    background: linear-gradient(180deg, rgba(38,30,57,1) 24%, rgba(128,69,236,1) 56%, rgba(38,30,57,1) 86%);
+    padding: 0px 15% 65px 15%;
+    overflow-x: hidden;
+        @media screen and ( max-width:550px) {
+        padding: 65px 15px;
+} 
+
+}
+
+
+
+
+.flexBootC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    @media screen and ( max-width:880px) {
+        flex-direction: column;
+} 
+    div:nth-child(1){
+        width: 60%;
+        @media screen and ( max-width:880px) {
+            width: 100%;
+    } 
+    }
+    div:nth-child(2){
+        width: 30%;
+        @media screen and ( max-width:880px) {
+            width: 100%;
+    } 
+    }
+    
+    @media screen and ( max-width:550px) {
+        padding: 65px 15px;
+} 
+}
+
+
+.img-boot-hacer{
+    width: 100%;
+    filter: drop-shadow(14px 14px 19px #000000);
+    @media screen and ( max-width:880px) {
+        width: 300px;
+} 
+@media screen and ( max-width:400px) {
+    width: 250px;
+} 
+}

@@ -37,6 +37,7 @@
     @include flex;
     @media screen and ( max-width:1050px) {
         flex-direction: column;
+        gap: 30px;
 } 
   }
 
@@ -48,6 +49,7 @@
     @include flex;
     @media screen and ( max-width:1050px) {
         flex-direction: column-reverse;
+        gap: 30px;
 } 
   }
 
@@ -57,6 +59,7 @@
 
   .flex-c{
     @include flex;
+    gap: 0px;
     flex-direction: column;
     @media screen and ( max-width:1050px) {
         flex-direction: column;
@@ -87,6 +90,7 @@
 
   .planesFlex > div{
     width: 100%;
+    height: fit-content;
   }
 
 
@@ -104,7 +108,7 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      gap:15px;
+      gap:36px;
 } 
 
   }

@@ -36,3 +36,32 @@
 .navbar-toggler{
     border: 1px solid white;
 }
+.paso-relative{
+    position: relative;
+}
+.primer-paso{
+    background-color: #EE2478;
+    color: white;
+    padding: 1px 10px;
+    font-family: shield;
+    font-weight: 800;
+    position: absolute;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    top: 32px;
+    left: 29px;
+    @media screen and ( max-width:1072px) {
+        top: 55px;
+        left: 3px;
+} 
+@media screen and ( max-width:991px) {
+    top: 32px;
+    left: 29px;
+} 
+}
+
+@media screen and ( max-width:991px) {
+    .header ul li:nth-child(2){
+        margin-bottom: 15px;
+    }
+} 

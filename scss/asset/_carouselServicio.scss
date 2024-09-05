@@ -163,10 +163,12 @@ object-fit: cover;
 .main-nivelacion > div{
     width: 50%;
 
-    @media screen and ( max-width:1000px) {
+    @media screen and ( max-width:1050px) {
         width: 100%;
+        
     }
 }
+
 
 .marginCarousel{
     margin-bottom: 400px;
@@ -182,6 +184,9 @@ object-fit: cover;
     right: 5px;
     background-color: $primario;
     padding: 4px;
+    @media screen and (max-width:1000px) {
+        top:-24px;
+            }
 }
 
 
@@ -203,13 +208,21 @@ object-fit: cover;
     }
 
 }
+.section-planNiv{
+    background: rgb(238,36,120);
+    background: linear-gradient(180deg, rgba(238,36,120,1) 1%, rgba(38,30,57,1) 66%);
+    @include padding;
+    li{
+        list-style: none;
+    }
+
+}
 
 
 .carousel__item-doss {
     background-color: $fondo;
     position: relative;
     padding: 20px;
-    height:Auto;
     width: 750px;
     border-radius: 3px;
     box-shadow: 0 1rem 4rem rgba(0,0,0,.5);
@@ -229,10 +242,18 @@ li{
     list-style: none;
 }
 }
-.carousel__item-doss:nth-child(2) {
+.carousel__item-doss:nth-child(1) {
     background-color: white;
     
     }
+    .carousel__item-doss:nth-child(2) {
+        background-color: white;
+        
+        }
+        .carousel__item-doss:nth-child(3) {
+            background-color: white;
+            
+            }
 
 
     .flexCol{
@@ -247,11 +268,11 @@ li{
 
 
     .carousel__item-cel {
-        background-color: $fondo;
+        background-color: white;
         position: relative;
         padding: 20px;
         height:Auto;
-        width: 450px;
+        width: 330px;
         border-radius: 3px;
         box-shadow: 0 1rem 4rem rgba(0,0,0,.5);
         z-index: 0;
@@ -260,17 +281,48 @@ li{
         color: $primario;
     
         @media screen and (max-width:550px) {
-            width: 100%;
+            width: 310px;
     
             }
             @media screen and (max-width:670px) {
                 height:auto;
+                padding: 10px;
                 }
     li{
         list-style: none;
     }
     }
-    .carousel__item-cel:nth-child(2) {
+    .carousel__item-cel:nth-child(1) {
         background-color: white;
         
         }
+        .carousel__item-cel:nth-child(2) {
+            background-color: white;
+            
+            }
+            .carousel__item-cel:nth-child(3) {
+                background-color: white;
+                
+                }
+        
+
+                .cardDrop{
+                    display: none;
+                    @media screen and (max-width:500px) {
+                        display: flex;
+                        }
+                }
+
+                .cardDrop2{
+
+                    @media screen and (max-width:500px) {
+                        display: none;
+                        }
+                }
+                
+
+.mas{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
