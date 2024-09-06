@@ -34,23 +34,6 @@
   width: 100%;
 }
 
-.flex-r {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-}
-@media screen and (max-width: 1050px) {
-  .flex-r {
-    flex-direction: column-reverse;
-    gap: 30px;
-  }
-}
-
-.flex-r > div {
-  width: 100%;
-}
-
 .flex-c {
   display: flex;
   justify-content: center;
@@ -121,6 +104,135 @@
   .planDeskt {
     display: none;
   }
+}
+
+.flex-r {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  gap: 30px;
+}
+@media screen and (max-width: 1050px) {
+  .flex-r {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .flex-r:nth-child(2) {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .flex-r:nth-child(4) {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .flex-r:nth-child(6) {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+}
+
+.fase {
+  width: 60px;
+}
+
+.flex-final {
+  display: flex;
+  justify-content: end;
+}
+
+.gridfases {
+  display: grid;
+  width: 100%;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  grid-template-areas: "f0 flech1 f1" ". . flech2" "f3 flech3 f2" "flech4 . ." "f4 flech5 f5";
+  gap: 20px;
+}
+@media screen and (max-width: 890px) {
+  .gridfases {
+    display: none;
+  }
+}
+
+.gridfases2 {
+  display: none;
+}
+@media screen and (max-width: 890px) {
+  .gridfases2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.f0 {
+  grid-area: f0;
+}
+
+.f1 {
+  grid-area: f1;
+}
+
+.f2 {
+  grid-area: f2;
+}
+
+.f3 {
+  grid-area: f3;
+}
+
+.f4 {
+  grid-area: f4;
+}
+
+.f5 {
+  grid-area: f5;
+}
+
+.flech1 {
+  grid-area: flech1;
+}
+
+.flech2 {
+  grid-area: flech2;
+}
+
+.flech3 {
+  grid-area: flech3;
+}
+
+.flech4 {
+  grid-area: flech4;
+}
+
+.flech5 {
+  grid-area: flech5;
+}
+
+.contFases {
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #261E39;
+  width: 100%;
+}
+
+.img-nivelacion-70 {
+  width: 70px;
 }
 
 /* Tipografias */
@@ -255,6 +367,13 @@
   .principal-grande-dos-light-P {
     font-size: 2.5rem;
   }
+}
+
+.precioPlanes {
+  line-height: 0.6;
+  font-size: 3rem;
+  color: #EE2478;
+  font-weight: 400;
 }
 
 .tituloPrincipalB {
@@ -465,6 +584,17 @@
   font-size: 2rem;
   color: #261E39;
   font-weight: 800;
+}
+
+.parrafo-plan-f {
+  font-size: 0.8rem;
+  color: #261E39;
+  font-weight: 200;
+}
+@media screen and (max-width: 1300px) {
+  .parrafo-plan-f {
+    font-size: 1rem;
+  }
 }
 
 /* Tipografias */
@@ -895,18 +1025,18 @@ a {
   }
 }
 footer {
-  padding: 70px 0px;
+  padding: 70px 15%;
   background-color: #261E39;
   text-align: center;
 }
 
 .footer {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 20px;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 790px) {
   .footer {
     flex-direction: column;
     gap: 20px;
@@ -929,6 +1059,11 @@ footer {
   justify-content: space-between;
   align-items: center;
   gap: 10px;
+}
+@media screen and (max-width: 790px) {
+  .flex-redes {
+    justify-content: center;
+  }
 }
 
 .redes {
@@ -1046,6 +1181,16 @@ footer a:hover {
 
 a {
   text-decoration: none !important;
+}
+
+footer form {
+  width: 250px;
+}
+
+.flex-foot-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* Main index */
@@ -1329,7 +1474,7 @@ a {
   height: 400px;
   padding: 60px;
   border-radius: 15px;
-  background-color: #261E39;
+  background-color: white;
 }
 @media screen and (max-width: 1450px) {
   .fondo-borde-flex-dos {
@@ -1424,7 +1569,18 @@ a {
   height: auto !important;
 }
 
+.niv-mobile2 {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .niv-mobile2 {
+    display: block;
+  }
+}
+
 .lineaDos {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
   color: white;
   width: 460px;
 }
@@ -1459,7 +1615,7 @@ a {
   justify-content: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto 50px auto;
+  grid-template-rows: auto 10px auto;
   grid-template-areas: "p1 p2 p3" "hr hr hr" "p4 p5 p6";
   justify-items: center;
   align-items: center;
@@ -1497,7 +1653,7 @@ a {
   grid-area: p6;
 }
 
-.hr {
+.hrr {
   grid-area: hr;
 }
 
@@ -1701,6 +1857,20 @@ a {
 @media screen and (max-width: 400px) {
   .img-boot-hacer {
     width: 250px;
+  }
+}
+
+.img-fluid-plan {
+  width: 100%;
+}
+
+.img-fluid-plan2 {
+  width: 120px;
+}
+
+@media screen and (max-width: 500px) {
+  .mobilePlan {
+    display: none;
   }
 }
 
@@ -2148,6 +2318,8 @@ a {
 @media screen and (max-width: 500px) {
   .cardDrop {
     display: flex;
+    align-items: center;
+    gap: 5px;
   }
 }
 
@@ -2157,25 +2329,18 @@ a {
   }
 }
 
-.mas {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
 .popup {
-  width: 500px;
+  width: 300px;
   display: none;
   position: fixed;
   top: 50%;
-  right: -227px;
+  right: -140px;
   transform: translate(-50%, -50%);
-  padding: 2em;
+  padding: 1em;
   font-size: 17px;
   font-weight: 500;
   background-color: white;
   border-radius: 5px;
-  text-align: center;
   z-index: 1000;
   opacity: 0;
   transition: opacity 0.5s;
@@ -2183,13 +2348,6 @@ a {
   box-shadow: 9px 9px 21px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 9px 9px 21px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 9px 9px 21px 0px rgba(0, 0, 0, 0.75);
-}
-@media screen and (max-width: 550px) {
-  .popup {
-    width: 100%;
-    right: unset;
-    left: 50%;
-  }
 }
 
 .popup.show {
@@ -2220,6 +2378,15 @@ a {
   position: relative;
   font-size: 2rem;
   animation: cuadrado 2s infinite;
+}
+
+.popCont {
+  display: flex;
+  gap: 5px;
+  align-items: flex-start;
+}
+.popCont img {
+  width: 40px;
 }
 
 .progress {

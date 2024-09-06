@@ -1,16 +1,16 @@
 .popup {
-  width: 500px;
+  width: 300px;
     display: none;
     position: fixed;
     top: 50%;
-    right: -227px;
+    right: -140px;
     transform: translate(-50%, -50%);
-    padding: 2em;
+    padding: 1em;
     font-size: 17px;
     font-weight: 500;
     background-color: white;
     border-radius: 5px;
-    text-align: center;
+  
     z-index: 1000;
     opacity: 0;
     transition: opacity 0.5s;
@@ -18,11 +18,7 @@
     box-shadow: 9px 9px 21px 0px rgba(0,0,0,0.75);
 -webkit-box-shadow: 9px 9px 21px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 9px 9px 21px 0px rgba(0,0,0,0.75);
-@media screen and ( max-width:550px) {
-  width: 100%;
-  right: unset;
-  left: 50%;
-} 
+
   }
   
   .popup.show {
@@ -59,3 +55,11 @@
     animation: cuadrado 2s infinite;
 }
 
+.popCont{
+display: flex;
+gap: 5px;
+align-items: flex-start;
+img{
+  width: 40px;
+}
+}

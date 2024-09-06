@@ -310,6 +310,8 @@ li{
                     display: none;
                     @media screen and (max-width:500px) {
                         display: flex;
+                        align-items: center;
+                        gap: 5px;
                         }
                 }
 
@@ -321,8 +323,3 @@ li{
                 }
                 
 
-.mas{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}

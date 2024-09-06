@@ -109,7 +109,13 @@
         font-size: 2.5rem;
     }
 }
+.precioPlanes{
+    line-height: 0.6;
+    font-size: 3rem;
+    color: $primario;
+    font-weight: 400;
 
+}
 .tituloPrincipalB{
 
     font-size: 3.5rem;
@@ -300,5 +306,16 @@
     color: $fondo;
     font-weight: 800;
 
+}
+
+
+.parrafo-plan-f{
+
+    font-size: 0.8rem;
+    color: $fondo;
+    font-weight: 200;
+    @media screen and ( max-width:1300px) {
+        font-size: 1rem;
+    }
 }
 /* Tipografias */

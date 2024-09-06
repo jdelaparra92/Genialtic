@@ -4,7 +4,7 @@ function showPopup() {
   
     setTimeout(function() {
         closePopup();
-    }, 38000);
+    }, 68000);
   }
   
   function closePopup() {

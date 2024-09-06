@@ -1,17 +1,18 @@
 footer{
-    padding: 70px 0px;
+    padding: 70px 15%;
     background-color: $fondo;
     text-align: center;
 }
 .footer{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    @media screen and ( max-width:500px) {
+    gap: 20px;
+    @media screen and ( max-width:790px) {
         flex-direction: column;
         gap: 20px;
     }
+
 }
 
 .linea{
@@ -27,6 +28,9 @@ footer{
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+    @media screen and ( max-width:790px) {
+        justify-content: center;
+    }
 }
 .redes{
     margin-top: 20px;
@@ -149,4 +153,15 @@ footer a:hover{
 
 a{
     text-decoration: none !important;
+}
+
+footer form{
+    width: 250px;
+}
+
+.flex-foot-form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
 }
