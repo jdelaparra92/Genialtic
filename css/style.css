@@ -1004,7 +1004,7 @@ a {
   border-radius: 15px;
   font-size: 0.8rem;
   top: 32px;
-  left: 29px;
+  left: 38px;
 }
 @media screen and (max-width: 1072px) {
   .primer-paso {
@@ -1669,8 +1669,8 @@ footer form {
 }
 
 .section-bootcamp-uno {
-  background: rgb(238, 36, 120);
-  background: linear-gradient(0deg, rgb(238, 36, 120) 1%, rgb(38, 30, 57) 100%);
+  background: rgb(128, 69, 236);
+  background: linear-gradient(0deg, rgb(128, 69, 236) 12%, rgb(38, 30, 57) 86%);
   padding: 65px 15%;
   overflow-x: hidden;
 }
@@ -2198,8 +2198,8 @@ footer form {
 }
 
 .section-plan {
-  background: rgb(38, 30, 57);
-  background: linear-gradient(6deg, rgb(38, 30, 57) 51%, rgb(128, 69, 236) 100%);
+  background: rgb(128, 69, 236);
+  background: linear-gradient(180deg, rgb(128, 69, 236) 12%, rgb(62, 41, 105) 47%, rgb(38, 30, 57) 60%);
   padding: 125px 15%;
   overflow-x: hidden;
 }
