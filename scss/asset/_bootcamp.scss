@@ -16,6 +16,10 @@ display: none;
     background: rgb(38,30,57);
     background: linear-gradient(0deg, rgba(38,30,57,1) 0%, rgba(128,69,236,1) 91%, rgba(38,30,57,1) 100%);
     @include padding;
+    @media screen and ( max-width:550px) {
+       padding-bottom: 10px;
+        
+    }
 }
 .fondo-flecha{
     padding: 30px;
@@ -97,6 +101,7 @@ display: none;
     overflow-x: hidden;
         @media screen and ( max-width:550px) {
         padding: 65px 15px;
+        padding-bottom: 10px;
 } 
 
 }
@@ -176,6 +181,7 @@ display: none;
     overflow-x: hidden;
         @media screen and ( max-width:550px) {
         padding: 65px 15px;
+        padding-top: 10px;
 } 
 
 }
@@ -205,6 +211,7 @@ display: none;
     overflow-x: hidden;
         @media screen and ( max-width:550px) {
         padding: 65px 15px;
+        padding-top: 10px;
 } 
 
 }
@@ -229,6 +236,7 @@ display: none;
     overflow-x: hidden;
         @media screen and ( max-width:550px) {
         padding: 65px 15px;
+        padding-bottom: 20px;
 } 
 
 }

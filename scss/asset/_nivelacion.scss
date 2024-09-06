@@ -38,6 +38,11 @@
     background: rgb(38,30,57);
     background: linear-gradient(0deg, rgba(38,30,57,1) 0%, rgba(238,36,120,1) 15%, rgba(38,30,57,1) 100%);
     padding:20px 15% 60px 15%;
+    overflow: hidden;
+    @media screen and ( max-width:550px) {
+        padding-bottom: 10px;
+        
+    }
 }
 
 .fondo-borde-flex-dos{
@@ -70,6 +75,10 @@
     background: rgb(38,30,57);
     background: linear-gradient(0deg, rgba(38,30,57,1) 0%, rgba(128,69,236,1) 13%, rgba(38,30,57,1) 27%, rgba(128,69,236,1) 45%, rgba(38,30,57,1) 62%, rgba(128,69,236,1) 79%, rgba(38,30,57,1) 100%);
     @include padding;
+    @media screen and ( max-width:600px) {
+        padding-bottom: 10px;
+        
+    }
 }
 // fin seccion 2 //
 

@@ -1262,6 +1262,7 @@ footer form {
 @media screen and (max-width: 550px) {
   .sect-potenciar {
     padding: 65px 15px;
+    padding-bottom: 0px;
   }
 }
 
@@ -1383,6 +1384,7 @@ footer form {
 @media screen and (max-width: 550px) {
   .section-cuatro {
     padding: 65px 15px;
+    padding-bottom: 0px;
   }
 }
 
@@ -1394,6 +1396,7 @@ footer form {
   .libera-genio-dos {
     padding: 0px;
     width: 100%;
+    margin: 10px 0px;
   }
 }
 
@@ -1467,6 +1470,12 @@ footer form {
   background: rgb(38, 30, 57);
   background: linear-gradient(0deg, rgb(38, 30, 57) 0%, rgb(238, 36, 120) 15%, rgb(38, 30, 57) 100%);
   padding: 20px 15% 60px 15%;
+  overflow: hidden;
+}
+@media screen and (max-width: 550px) {
+  .niv-cont-uno {
+    padding-bottom: 10px;
+  }
 }
 
 .fondo-borde-flex-dos {
@@ -1512,6 +1521,11 @@ footer form {
 @media screen and (max-width: 550px) {
   .niv-cont-dos {
     padding: 65px 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .niv-cont-dos {
+    padding-bottom: 10px;
   }
 }
 
@@ -1606,6 +1620,11 @@ footer form {
     padding: 65px 15px;
   }
 }
+@media screen and (max-width: 550px) {
+  .main-boot {
+    padding-bottom: 10px;
+  }
+}
 
 .fondo-flecha {
   padding: 30px;
@@ -1677,6 +1696,7 @@ footer form {
 @media screen and (max-width: 550px) {
   .section-bootcamp-uno {
     padding: 65px 15px;
+    padding-bottom: 10px;
   }
 }
 
@@ -1759,6 +1779,7 @@ footer form {
 @media screen and (max-width: 550px) {
   .section-bootcamp-tres {
     padding: 65px 15px;
+    padding-top: 10px;
   }
 }
 
@@ -1784,6 +1805,7 @@ footer form {
 @media screen and (max-width: 550px) {
   .section-bootcamp-cuatro {
     padding: 65px 15px;
+    padding-top: 10px;
   }
 }
 
@@ -1809,6 +1831,7 @@ footer form {
 @media screen and (max-width: 550px) {
   .section-pagos {
     padding: 65px 15px;
+    padding-bottom: 20px;
   }
 }
 
