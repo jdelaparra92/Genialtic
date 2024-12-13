@@ -1568,14 +1568,14 @@ background-size: cover;
 
 .fondo-borde-flex-dos {
   width: 100%;
-  height: 400px;
+  height: 430px;
   padding: 60px;
   border-radius: 15px;
   background-color: white;
 }
 @media screen and (max-width: 1450px) {
   .fondo-borde-flex-dos {
-    height: 450px;
+    height: 460px;
   }
 }
 @media screen and (max-width: 1300px) {
