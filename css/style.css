@@ -2774,6 +2774,11 @@ padding: 0px 20px 0px 20px;
   font-size: 2.3rem;
   color: #261E39;
 }
+.horarios{
+  font-weight: 400;
+  font-size: 2.3rem;
+  color: #261E39;
+}
 
 .planPreciosP {
   display: flex;
@@ -2902,3 +2907,17 @@ height: fit-content;
   color: #261E39;
 }
 /*metodos de pago fin*/
+
+.fondo-fechas {
+  width: 350px !important;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: white;
+  border: 3px solid #EE2478;
+}
+@media screen and (max-width: 450px) {
+  .fondo-fechas {
+    width: 100% !important;
+    padding: 15px;
+  }
+}
