@@ -1719,7 +1719,7 @@ background-size: cover;
 }
 
 .fondo-flecha {
-  padding: 30px;
+  padding: 30px 0px;
 }
 
 .grid-boot {
@@ -2756,6 +2756,7 @@ padding: 0px 20px 0px 20px;
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .fondo-pagos ul {
@@ -2832,7 +2833,23 @@ padding: 0px 20px 0px 20px;
 }
 
 /*bootcamp*/
-
+.flexBoot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.flexBoot > a{
+width: 100%;
+text-align: center;
+}
+@media screen and (max-width: 1050px) {
+  .flexBoot {
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+}
 .registrateFixed{
 position: sticky;
 bottom: 0px;
@@ -2861,8 +2878,13 @@ align-items: center;
   text-decoration: none;
   border-radius: 50px;
   font-family: shield !important;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   transition: 0.3s;
+}
+.botonBootcamp:hover {
+
+  color: #261E39;
+
 }
 @media screen and (max-width: 500px) {
   .botonBootcamp {
@@ -2870,6 +2892,27 @@ align-items: center;
   }
 }
 
+.botonBootcampD {
+  line-height: 0;
+  padding: 30px 50px;
+  background: #EE2478;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-family: shield !important;
+  font-size: 1.4rem;
+  transition: 0.3s;
+}
+.botonBootcampD:hover {
+
+  color: #261E39;
+
+}
+@media screen and (max-width: 500px) {
+  .botonBootcampD {
+    font-size: 1.2rem;
+  }
+}
 @media screen and (max-width: 700px) {
   .pagos-celu {
     display: none;
@@ -2880,8 +2923,8 @@ align-items: center;
   
   line-height: 0;
   padding: 20px 30px;
-  background: #ece8e8;
-  color: gray;
+  background: #EE2478;
+  color: white;
   text-decoration: none;
   border-radius: 50px;
   font-family: shield !important;
@@ -2919,5 +2962,10 @@ height: fit-content;
   .fondo-fechas {
     width: 100% !important;
     padding: 15px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .padding-b{
+    padding-bottom: 30px;
   }
 }
